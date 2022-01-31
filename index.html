@@ -4,26 +4,38 @@
 	<meta charset="UTF-8">
 	<title>Kit</title>
 	<style>
-	li:{
+	.parent {
 	border: 1px solid red;
-	list-style-type: circle;
-	color: red;
-	width: 100px;
+	width: 500px;
 	}
-	li:empty {
-	border: 1px solid blue;
-	list-style-type: circle;
-	color: blue;
+
+	.child1 {
+	height: 100px;
 	width: 100px;
+	border: 1px solid green;
+	margin: 10px auto;
+	}
+	.child2{
+	height: 100px;
+	width: 200px;
+	border: 1px solid green;
+	margin: 10px auto;
+
+	}
+	.child3{
+	height: 100px;
+	width: 300px;
+	border: 1px solid green;
+	margin: 10px auto;
+
 	}
 	</style>
 </head>
 <body>
-<ul>
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-	<li></li>
-</ul>
+<div class="parent">
+	<div class="child1"></div>
+	<div class="child2"></div>
+	<div class="child3"></div>
+</div>
 </body> 
 </html>
