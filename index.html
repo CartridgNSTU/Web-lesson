@@ -4,26 +4,24 @@
 	<meta charset="UTF-8">
 	<title>Kit</title>
 	<style>
-	li:{
+	#parent {
+	width: 300px;
 	border: 1px solid red;
-	list-style-type: circle;
-	color: red;
-	width: 100px;
-	}
-	li:empty {
-	border: 1px solid blue;
-	list-style-type: circle;
-	color: blue;
-	width: 100px;
+}
+	#child {
+	margin-top:    20px; /* сверху */
+	margin-right:  20px; /* справа */
+	margin-bottom: 100px; /* снизу */
+	margin-left:   20px; /* слева */
+	
+	height: 300px;
+	border: 1px solid green;
 	}
 	</style>
 </head>
 <body>
-<ul>
-	<li>1</li>
-	<li>2</li>
-	<li>3</li>
-	<li></li>
-</ul>
+<div id="parent">
+	<div id="child"></div>
+</div>
 </body> 
 </html>
