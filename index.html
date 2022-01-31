@@ -4,21 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Kit</title>
 	<style>
-	li:only-child{
-		color: red;
+	li:{
+	border: 1px solid red;
+	list-style-type: circle;
+	color: red;
+	width: 100px;
+	}
+	li:empty {
+	border: 1px solid blue;
+	list-style-type: circle;
+	color: blue;
+	width: 100px;
 	}
 	</style>
 </head>
 <body>
 <ul>
 	<li>1</li>
-</ul>
-<ul>
-	<li>1</li>
 	<li>2</li>
 	<li>3</li>
-	<li>4</li>
-	<li>5</li>
+	<li></li>
 </ul>
 </body> 
 </html>
